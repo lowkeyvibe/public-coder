@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- ICONO DE LA PESTAÑA -->
+  <link rel="icon" type="x-icon" href="./img/NavBar-Icons/logo.png.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Home</title>
+
+  <!-- AGREGO BOOTSTRAP AL PROYECTO -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body class="main-page">
+
+  <header>
+    <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a href="./main-store-page.html"><img src="./img/NavBar-Icons/logo.png.png"
+            style="width: 70px; height: 60px; border: white solid 1px;" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+
+
+          <!-- CATEGORIAS DE JUEGOS -->
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle mt-n1" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Game Categories
+              </a>
+
+              <!-- EN UN FUTURO FILTRAR POR PRECIOS -->
+              <ul class="dropdown-menu">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Games By Price
+                </a>
+                <li><a class="dropdown-item " href="#">Games by Price</a></li>
+
+                <!-- EN UN FUTURO FILTRAR POR GENERO -->
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Games By Gender
+                </a>
+                <li><a class="dropdown-item" href="#">Games by Gender</a></li>
+
+                <!-- EN UN FUTURO FILTRAR POR PLATAFORMA -->
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Games By Plattform
+                </a>
+                <li><a class="dropdown-item" href="#">Games by Plattform</a></li>
+              </ul>
+            </li>
+
+
+            <!-- EN UN FUTURO FILTRAR POR JUEGOS DE PC -->
+            </li>
+            <li class="nav-item pc">
+              <a class="nav-link" href="#">PC</a>
+            </li>
+
+            <!-- EN UN FUTURO FILTRAR POR JUEGOS DE PS5 -->
+            <li class="nav-item ps5">
+              <a class="nav-link" href="#">PS5</a>
+            </li>
+
+            <!-- EN UN FUTURO FILTRAR POR JUEGOS DE XBOX -->
+            <li class="nav-item xbox">
+              <a class="nav-link" href="#">XBOX</a>
+            </li>
+
+            <!-- EN UN FUTURO FILTRAR POR JUEGOS DE NINTENDO SWITCH -->
+            <li class="nav-item nintendo">
+              <a class="nav-link" href="#">NINTENDO SWITCH</a>
+            </li>
+          </ul>
+
+
+          <!-- SEARCH BAR, EN UN FUTURO HACERLA FUNCIONAL -->
+          <form class="d-flex searching" role="search">
+            <input class="form-control me-2" type="search" placeholder="What are you looking for?" aria-label="Search"
+              style="width: 400px;">
+            <button class="btn btn-outline-success" type="submit"><img style="width: 20px;"
+                src="./img/SearchBar/icons8-search-50.png" alt=""></button>
+          </form>
+
+          <!-- BOTON DE LOGIN, HACERLA FUNCIONAL CON LOCALSTORAGE -->
+          <a href="./login-page.html"><img src="./img/NavBar-Icons/login.png" alt="" width="45px; height: 43px;"></a>
+
+          <!-- CARRITO, HACERLO FUNCIONAL CON MANEJO DE DOM -->
+          <button class="ver-carrito" id="verCarrito"
+            style="background-color: #212529; border: none; margin-left: 1rem;"><img src="./img/NavBar-Icons/cart.png"
+              alt="" width="45px; height: 43px;"><span id="quantityCart" class="quantity-cart"> </span></button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- PRODUCTOS QUE VOY A OFRECER, VOY A INSERTARLOS DESDE JAVASCRIPT -->
+  <div id="shopContent" class="shop-content"></div>
+
+
+  <!-- DIV CARRITO -->
+  <div class="cart-div" id="cartDiv"></div>
+</body>
+
+
+<footer>
+  <ul>
+    <li>Terms & Conditions</li>
+    <li>Privacy Notice</li>
+    <li>Support</li>
+    <li>Copyright © 2023 Games Store. All Rights Reserved.</li>
+  </ul>
+</footer>
+
+
+<!-- AGREGO MI JS AL PROYECTO -->
+<script src="./JavaScript/cart.js"></script>
+<script src="./JavaScript/store.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+<!-- AGREGO BOOTSTRAP AL PROYECTO -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+</html>

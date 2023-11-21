@@ -1,0 +1,417 @@
+/* REGLAS GENERALES PARA EL PROYECTO */
+* {
+    font-size: 62, 5%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* BARRA DE BUSQUEDA */
+.searching {
+    position: relative;
+    right: 15rem;
+}
+
+/* MARGIN DE PLATAFORMAS */
+nav li {
+    margin-left: 2.5rem;
+}
+
+/* LOGO */
+nav a img {
+    margin-left: 3rem;
+}
+
+
+/* BOTON DE PC */
+.nav-item.pc {
+    background-color: rgb(232, 160, 219);
+    border-bottom: solid black 2.5px;
+    border-left: solid black 2.5px;
+    border-top: solid black 1px;
+    border-right: solid black 1px;
+    border-radius: 4px;
+}
+
+.nav-item.pc a {
+    font-weight: bold;
+    color: white;
+}
+
+/* BOTON DE PS5 */
+.nav-item.ps5 {
+    background-color: blue;
+    border-bottom: solid black 2.5px;
+    border-left: solid black 2.5px;
+    border-top: solid black 1px;
+    border-right: solid black 1px;
+    border-radius: 4px;
+}
+
+.nav-item.ps5 a {
+    font-weight: bold;
+    color: white;
+}
+
+/* BOTON DE XBOX */
+.nav-item.xbox {
+    background-color: green;
+    border-bottom: solid black 2.5px;
+    border-left: solid black 2.5px;
+    border-top: solid black 1px;
+    border-right: solid black 1px;
+    border-radius: 4px;
+}
+
+.nav-item.xbox a {
+    font-weight: bold;
+    color: white;
+}
+
+/* BOTON DE NINTENDO */
+.nav-item.nintendo {
+    background-color: rgba(238, 7, 7, 0.559);
+    border-bottom: solid black 2.5px;
+    border-left: solid black 2.5px;
+    border-top: solid black 1px;
+    border-right: solid black 1px;
+    border-radius: 3px;
+}
+
+.nav-item.nintendo a {
+    font-weight: bold;
+    color: white;
+}
+
+
+/* MAIN STORE PAGE */
+
+.main-page {
+    background-color: #1F0A4E;
+}
+
+
+.shop-content {
+    margin: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem;
+}
+
+.card {
+    background-color: #5725AA;
+    width: 12rem;
+    border: solid 2px black;
+}
+
+.card h3 {
+    color: white;
+    text-align: center;
+    margin: 1rem;
+    font-size: 1.2rem;
+}
+
+.card p {
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.card button {
+    margin: auto;
+    border: none;
+    border-radius: 0.1rem;
+    margin-bottom: 1rem;
+    font-size: 0.8rem;
+    color: white;
+    width: 6rem;
+    padding: 0.4rem;
+    background-color: #10A37F;
+}
+
+.shop-content img {
+    border: solid 1px black;
+    margin: auto;
+    margin-top: 1rem;
+    width: 8rem;
+    height: 12rem;
+    justify-content: center;
+}
+
+
+/* DIV DEL CARRITO */
+
+.cart-div {
+    position: absolute;
+    width: 30rem;
+    top: 5rem;
+    right: 52rem;
+    background-color: black;
+    border: solid 0.1rem white;
+    flex-direction: column;
+    border-radius: 0.2rem;
+
+}
+
+/* TITULO CART */
+.stylingCart {
+    margin: auto;
+    color: white;
+    display: flex;
+}
+
+
+
+.final-price {
+    font-size: 1.4rem;
+    margin-top: 1rem;
+    text-align: center;
+    color: white;
+}
+
+
+/* ESTILOS DEL CARRITO EN GENERAL*/
+.price-quantity {
+    color: red;
+}
+
+.quantity-games {
+    color: blue;
+}
+
+.game-price {
+    color: yellow;
+}
+
+.final-price {
+    color: green;
+}
+
+.quantity-cart {
+    background-color: white;
+    font-size: 0.8rem;
+    position: absolute;
+    top: 1rem;
+    right: 0.3rem;
+    color: black;
+    border-radius: 50%;
+    width: 1.3rem;
+    height: 1.2rem;
+    display: none;
+}
+
+.stylingCart button {
+    margin-top: 0.5rem;
+    margin-left: 10rem;
+}
+
+.cart-div {
+    border: none;
+}
+
+.cart-content {
+    margin: 2rem;
+    display: flex;
+    margin-left: 1rem;
+    max-height: 3rem;
+}
+
+.cart-content h3 {
+    color: white;
+    font-size: 0.9rem;
+    margin-left: 0.5rem;
+}
+
+.cart-content p {
+    margin-left: 0.5rem;
+}
+
+
+.cart-content img {
+    width: 4rem;
+    height: 5rem;
+}
+
+.delete-product {
+    margin-left: 2rem;
+}
+
+
+.close-div-button {
+    display: grid;
+    position: absolute;
+    right: 1rem;
+    width: 2rem;
+    height: 2rem;
+}
+
+.delete-chart {
+    color: white;
+    position: absolute;
+    left: -9rem;
+    padding: 0.5rem;
+    background-color: red;
+    border: none;
+    border-radius: 1rem;
+}
+
+
+/* LOGIN PAGE */
+.login-page {
+    background-color: #1F0A4E;
+}
+
+.logo-login {
+    width: 8rem;
+    height: 8rem;
+    margin: 2rem;
+}
+
+.container-login {
+    display: grid;
+    grid-template-columns: 10rem 50rem 1fr;
+    grid-template-rows: 2rem 36rem;
+    gap: 1rem;
+    grid-template-areas:
+        ". . ."
+        ". title1 visual"
+        ". . ."
+    ;
+}
+
+.greetings-login {
+    font-size: 5rem;
+    color: white;
+    grid-area: title1;
+}
+
+.visual-login {
+    padding: 2rem;
+    background-color: #5725AA;
+    width: 28rem;
+
+    grid-area: visual;
+}
+
+.visual-login h2 {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.visual-login h3 {
+    font-size: 1.2rem;
+    color: rgb(131, 129, 129);
+}
+
+.create-acc {
+    font-size: 1rem;
+    text-decoration: none;
+    color: yellow;
+}
+
+
+.loginContainer {
+    margin-top: 2rem;
+    display: grid;
+    justify-content: center;
+}
+
+/* GOOGLE LINK */
+.log1 {
+    font-weight: bold;
+    width: 20rem;
+    height: 3rem;
+    background-color: #E7DEDE;
+}
+
+.log1 img {
+    margin: 1rem;
+}
+
+/* FACEBOOK LINK */
+.log2 {
+    font-weight: bold;
+    width: 20rem;
+    height: 3rem;
+    background-color: #E7DEDE;
+}
+
+.log2 img {
+    margin: 1rem;
+}
+
+.log2 {
+    color: white;
+    font-weight: bold;
+    width: 20rem;
+    height: 3rem;
+    background-color: #626BF2;
+}
+
+/* APPLE LINK */
+.log3 {
+    color: white;
+    font-weight: bold;
+    width: 20rem;
+    height: 3rem;
+    background-color: #180F0F;
+}
+
+.log3 img {
+    margin: 1rem;
+}
+
+/* FORM LOGIN */
+.form-login {
+    margin-top: 1.2rem;
+    display: grid;
+    justify-content: center;
+}
+
+input {
+    color: white;
+    border: none;
+    background-color: #32117D;
+    display: grid;
+    margin: auto;
+    width: 20rem;
+    height: 3.5rem;
+    padding: 1rem;
+    margin: 0.5rem;
+}
+
+.form-login button {
+    background-color: #FAD318;
+    font-weight: bold;
+    border: none;
+    border-radius: 0.2rem;
+    margin-top: 0.5rem;
+    height: 2.5rem;
+}
+
+/* FOOTER */
+footer {
+    background-color: #212529;
+    height: 5rem;
+    margin-top: auto;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+}
+
+footer ul li {
+    margin-top: 1.5rem;
+    margin-left: 10rem;
+    color: white;
+    list-style: none;
+
+}
