@@ -1,0 +1,90 @@
+header {
+    display: flex;
+    align-items: center;
+    background-color: black;
+    color: #ffffff;
+}
+
+/* LOGO */
+header img {
+    width: 18rem;
+    height: 8rem;
+}
+
+/* LOCATION */ 
+.location {
+    display: flex;
+}
+
+.location span {
+    display: flex;
+    font-weight: bold;
+    font-size: 1.15rem;
+}
+
+.location img {
+    width: 2rem;
+    height: 2.1rem;
+}
+
+
+/* SEARCH BAR */
+
+.search-container {
+    margin-left: 4rem;
+    margin-left: 4rem;
+}
+
+input {
+    font-size: 1.5rem;
+    padding-left: 1rem;
+    width: 40rem;
+    height: 4rem;
+    border-radius: 0.4rem;
+    outline: none;
+    border: none;
+}
+
+/* LIST */
+.nav-list {
+    margin: auto;
+}
+
+.nav-list ul {
+    display: flex;
+    list-style: none;
+    font-size: 2rem;
+}
+
+.nav-list ul li {
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+.nav-list ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+/* LOGIN / REGISTER */
+
+.account-div button {
+    color: white;
+    font-weight: bold;
+    font-size: 1.05rem;
+    width: 10rem;
+    height: 2.3rem;
+    margin: 1rem;
+    border: none;
+    border-radius: 0.25rem;
+    display: block;
+}
+
+.login-button {
+    background-color: #E99634;
+}
+
+.register-button {
+    background-color: #1AB088;
+}
+

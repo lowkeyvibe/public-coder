@@ -1,0 +1,13 @@
+.divCart {
+    margin-left: auto;
+    margin-right: 1rem;
+}
+
+.divCart img {
+    width: 4.5rem;
+    height: 4rem;
+}
+
+.divCart strong {
+    font-size: 1.5rem;
+}
