@@ -16,7 +16,6 @@ const getProducts = async () => {
     const response = await fetch("data.json");
     const data = await response.json();
 
-
     data.forEach((product) => {
         // SE AGREGA UN JUEGO A LA PAGINA DE LA LISTA DE PRODUCTOS.
         let content = document.createElement('div');
