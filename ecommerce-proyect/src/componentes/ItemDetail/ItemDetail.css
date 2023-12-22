@@ -1,0 +1,29 @@
+.contenedorItem {
+    margin-top: 3rem;
+    margin-left: 4rem;
+    display: flex;
+}
+
+.contenedorItem img {
+    width: 50rem;
+}
+
+.info {
+    margin-left: 2.5rem;
+}
+
+.info h2 {
+    font-size: 7rem;
+}
+
+.product-info p {
+    font-size: 2rem;
+    margin-top: 4rem;
+}
+
+.price {
+    margin-left: 2rem;
+    font-size: 3rem;
+    color: green;
+    font-weight: 500;
+}

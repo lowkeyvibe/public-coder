@@ -1,0 +1,53 @@
+.button-container {
+    display: flex;
+    margin-top: 5rem;
+}
+
+
+
+.product-info li {
+    margin-top: 3rem;
+    list-style: none;
+    font-size: 5rem;
+}
+
+.subtract {
+    background-color: red;
+    border: black 2px solid;
+    border-radius: 2px;
+    color: white;
+    width: 10rem;
+    height: 3rem;
+}
+
+.plus {
+    background-color: green;
+    border-radius: 2px;
+    border: black 2px solid;
+    color: white;
+    width: 10rem;
+    height: 3rem;
+}
+
+.add-to-cart {
+    margin-left: 3rem;
+    color: black;
+    border-radius: 2px;
+    border: black solid 2px;
+    width: 15rem;
+    height: 3rem;
+    background-color: yellow;
+
+}
+
+.id-product {
+    margin-top: 6rem;
+    color: pink;
+    font-size: 4rem;
+    font-weight: 500;
+}
+
+.button-container p {
+    margin-left: 2rem;
+    margin-right: 2rem;
+}

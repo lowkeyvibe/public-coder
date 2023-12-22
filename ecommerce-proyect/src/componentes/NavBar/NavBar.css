@@ -59,6 +59,8 @@ input {
 
 .nav-list ul li {
     margin: 0rem 3rem;
+    font-size: 1.4rem;
+    text-transform: uppercase;
 }
 
 .nav-list ul li a {

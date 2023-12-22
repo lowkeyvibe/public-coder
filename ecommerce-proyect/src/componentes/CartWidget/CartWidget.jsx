@@ -2,7 +2,7 @@ import React from 'react'
 import "../CartWidget/CartWidget.css"
 
 const CartWidget = () => {
-    const cartImg = "/img/cart.png"
+  const cartImg = "/img/cart.png"
   return (
     <div className="divCart">
       <img src={cartImg} alt="Carrito" />
