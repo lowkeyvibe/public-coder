@@ -6,7 +6,6 @@ import '../NavBar/NavBar.css'
 const NavBar = () => {
   return (
     <header>
-
       {/* LOGO */}
       <Link to="/">
       <img src="../img/logo.png" alt="" />
@@ -15,7 +14,7 @@ const NavBar = () => {
       {/* LOCATION */}
       <div className="location">
         <img src="../img/location-white.png" alt="" />
-        <a className="">
+        <a className="a-location">
           <span>Send To</span>
           <span>Argentina</span>
         </a>
@@ -29,13 +28,12 @@ const NavBar = () => {
 
       {/* LIST */}
 
-    
       <div className="nav-list">
         <ul>  
-          <li><NavLink to="categoria/celulares">CellPhones</NavLink></li>
-          <li><NavLink to="categoria/juegos">Games</NavLink></li>
-          <li><NavLink to="categoria/muebles">Furniture</NavLink></li>
-          <li><NavLink to="categoria/cuadros">Pictures</NavLink></li>
+          <li><NavLink to="categoria/celulares">Phones 📱</NavLink></li>
+          <li><NavLink to="categoria/juegos">Games 🕹️</NavLink></li>
+          <li><NavLink to="categoria/muebles">Furniture 🪑</NavLink></li>
+          <li><NavLink to="categoria/cuadros">Painting 🖼️</NavLink></li>
         </ul>
       </div>
  

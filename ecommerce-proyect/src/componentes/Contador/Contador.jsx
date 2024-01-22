@@ -19,10 +19,17 @@ const Contador = ({ inicial, stock, addFunction }) => {
   return (
     <div className='button-container'>
       <button className='subtract' onClick={subtractCounter}> - </button>
-      <p> {counter} </p>
+      <div className='counter'>
+        <p > {counter} </p>
+      </div>
       <button className='plus' onClick={addCounter}> + </button>
-      <button className='add-to-cart' onClick={() => addFunction(counter)}>Agregar al carrito</button>
+
+      <div className='add-to-cart'>
+        <button className='button-add-to-cart' onClick={() => addFunction(counter)}>Add to cart!</button>
+      </div>
+
     </div>
+
   )
 }
 

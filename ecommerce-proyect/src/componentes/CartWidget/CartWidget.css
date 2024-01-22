@@ -1,13 +1,16 @@
-.divCart {
-    margin-left: auto;
-    margin-right: 1rem;
-}
-
-.divCart img {
-    width: 4.5rem;
+.carrito {
+    width: 4rem;
     height: 4rem;
+    margin-right: 0.8rem;
 }
 
-.divCart strong {
+.cantidad-cart {
+    font-family: 'Poppins', sans-serif;
     font-size: 1.5rem;
+    font-weight: bold;
+    color: red;
+    position: absolute ;
+    right: 19px;
+    top: 9px;
+    
 }
