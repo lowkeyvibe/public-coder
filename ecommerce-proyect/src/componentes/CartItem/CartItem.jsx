@@ -2,7 +2,7 @@ import { useContext } from "react"
 import { CarritoContext } from "../../Context/CarritoContext"
 import "./CartItem.css"
 
-const CartItem = ({ item, cantidad }) => {
+const CartItem = ({ item, cantidad, img }) => {
   const { eliminarProducto } = useContext(CarritoContext)
   return (
     <section>

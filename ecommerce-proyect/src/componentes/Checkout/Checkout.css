@@ -1,0 +1,54 @@
+.center-form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.center-form div label {
+    font-family: "Poppins";
+    display: block;
+    margin-top: 2rem;
+    color: white;
+    font-size: 1.3rem;
+}
+
+.center-form div input {
+    margin-top: 1rem;
+}
+
+.checkout-button {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.checkout-button button {
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+    border: none;
+    background-color: blanchedalmond;
+}
+
+.checkout-title {
+    font-family: "Poppins";
+    font-size: 3rem;
+    margin-top: 1rem;
+    margin-left: 1rem ;
+    color: white;
+}
+
+.checkout-unity-price {
+    font-family: "Poppins";
+    font-size: 2rem;
+    margin-left: 2rem ;
+    margin-bottom: 1.5rem;
+}
+
+.img-checkout {
+    margin-left: 4rem;
+    margin-bottom: 1.5rem;
+    width: 20rem;
+    height: 25rem;
+}
+

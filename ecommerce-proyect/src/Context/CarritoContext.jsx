@@ -10,7 +10,6 @@ export const CarritoContext = createContext({
 })
 
 // El valor inicial es un objeto, con la propiedad carrito, que es un Array vacio, el total de la compra, y la cantidad total de productos. 
-
 export const CarritoProvider = ({children}) => {
     // Creamos los estados!
     const [carrito, setCarrito] = useState([]);
@@ -18,9 +17,9 @@ export const CarritoProvider = ({children}) => {
     const [cantidadTotal, setCantidadTotal] = useState(0);
 
     // Verificamos por consola:
-    console.log(carrito);
-    console.log("Cantidad Items: " + cantidadTotal);
-    console.log("Precio total de la compra: " + total);
+    // console.log(carrito);
+    // console.log("Cantidad Items: " + cantidadTotal);
+    // console.log("Precio total de la compra: " + total)
 
     // ------------------------------------------------------ //
 

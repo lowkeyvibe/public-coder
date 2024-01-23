@@ -8,7 +8,7 @@ const products = [
     { id: "7", name: "God Of War", stock: 10, price: 30, img: "../assets/imgProducts/juegos/godofwar.png", category: "juegos" },
     { id: "8", name: "Spider-Man 2", stock: 10, price: 40, img: "../assets/imgProducts/juegos/sp2.png", category: "juegos" },
     { id: "9", name: "Mortal Kombat 11", stock: 10, price: 20, img: "../assets/imgProducts/juegos/mk11.png", category: "juegos" },
-    { id: "10", name: "Star Wars: Jedi Survivor", stock: 10, price: 25, img: "../assets/imgProducts/juegos/jedi.png", category: "juegos" },
+    { id: "10", name: "Star Wars", stock: 10, price: 25, img: "../assets/imgProducts/juegos/jedi.png", category: "juegos" },
     { id: "11", name: "Drawers", stock: 10, price: 40, img: "../assets/imgProducts/muebles/cajonera.png", category: "muebles" },
     { id: "12", name: "Bed", stock: 10, price: 100, img: "../assets/imgProducts/muebles/cama.png", category: "muebles" },
     { id: "13", name: "Wardrobe", stock: 10, price: 155, img: "../assets/imgProducts/muebles/placard.png", category: "muebles" },

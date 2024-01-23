@@ -1,9 +1,9 @@
 .cardProduct {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 1);
     background-color: #D4D4D4;
-    border-radius: 0.5rem;
+    border-radius: 0.8rem;
     width: 23rem;
-    height: 40rem;
+    height: 43rem;
     padding: 1rem;
     margin: 0.8rem;
     display: flex;
@@ -38,7 +38,7 @@
 }
 
 .div-imagen {
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 
 
