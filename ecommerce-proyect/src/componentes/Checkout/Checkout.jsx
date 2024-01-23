@@ -6,10 +6,7 @@ import { collection, addDoc, updateDoc, getDoc, doc } from "firebase/firestore"
 import "../Checkout/Checkout.css"
 
 const Checkout = () => {
-
   const { carrito, vaciarCarrito, total, cantidadTotal } = useContext(CarritoContext)
-
-  // const { carrito, vaciarCarrito, total, cantidadTotal } = useContext(CarritoContext);
 
   const [nombre, setNombre] = useState("");
   const [apellido, setApellido] = useState("");
@@ -22,19 +19,16 @@ const Checkout = () => {
   function manejadorSubmit(event) {
     event.preventDefault()
 
-    // Verificamos que todos los campos esten completos 
     if (!nombre || !apellido || !telefono || !email || !emailConfirmacion) {
       setError("Por favor completar todos los campos!")
       return
     }
 
-    // Validamos que el campo del email coincida.
     if (email !== emailConfirmacion) {
       setError("Deben coincidir los emails!")
       return
     }
 
-    // Creamos un objeto con todos los datos de la orden de compra.
     const orden = {
       items: carrito.map(producto => ({
         id: producto.item.id,
@@ -49,22 +43,16 @@ const Checkout = () => {
       email
     }
 
-    // MODIFICAMOS EL CODIGO PARA QUE EJECUTE VARIAS PROMESAS EN PARALELO, POR UN LADO QUE PUEDA CREAR LA ORDEN DE COMPRA Y POR EL OTRO QUE ACTUALICE EL STOCK.
-
     Promise.all(
       orden.items.map(async (productoOrden) => {
-        // Por cada producto en la colección obtengo una referencia, y a partir de esa diferencia obtengo el DOC:
 
         const productoRef = doc(dataBase, "inventario", productoOrden.id);
         const productoDoc = await getDoc(productoRef);
         const stockActual = productoDoc.data().stock;
-        // Recordemos, data() me permite obtener los datos del documento.
 
         await updateDoc(productoRef, {
           stock: stockActual - productoOrden.cantidad
         })
-
-        // Modifico el stock y subo la info actualizada.
       })
     )
 
@@ -81,8 +69,6 @@ const Checkout = () => {
         setError("No se pudo actualizar el stock")
       })
 
-
-    // Guardar la orden de compras en la base de datos:
     addDoc(collection(dataBase, "ordenes"), orden)
       .then(docRef => {
         setOrdenId(docRef.id)
@@ -94,7 +80,7 @@ const Checkout = () => {
       })
 
   }
-
+  
   return (
     <div>
       <form onSubmit={manejadorSubmit}>
@@ -102,15 +88,17 @@ const Checkout = () => {
         {
           carrito.map(producto => (
             <div key={producto.item.id}>
-              <p className='checkout-title' > {producto.item.name} x <span style={{ color: "red"}}>{producto.cantidad}</span> </p>
-              <p className='checkout-unity-price'> <span style={{color: "white"}}> Precio: $ </span> <span style={{color: "green"}}> {producto.item.price} </span> </p>
-              <img  className="img-checkout" src={producto.item.img} alt="" />
+              <p className='checkout-title' > {producto.item.name} x <span style={{ color: "red" }}>{producto.cantidad}</span> </p>
+              <p className='checkout-unity-price'> <span style={{ color: "white" }}> Precio: $ </span> <span style={{ color: "green" }}> {producto.item.price} </span> </p>
+              <img className="img-checkout" src={producto.item.img} alt="" />
               <hr />
+
             </div>
           ))
         }
 
         <hr />
+        <p className='final-price-checkout'>FINAL PRICE: <span className='total-ch'>${total}</span></p>
 
         <div className="center-form">
           <div>
@@ -139,13 +127,12 @@ const Checkout = () => {
           </div>
 
           {
-            error && <p style={{ color: "red" }}> {error} </p>
+            error && <p className='error-form'> {error} </p>
           }
-
 
           {
             ordenId && (
-              <strong> Gracias por su compra! Tu número de orden es: {ordenId} </strong>
+              <span className='thanks-checkout' > Gracias por su compra! Tu número de orden es: <span className="order-id">{ordenId}</span> </span>
             )
           }
         </div>

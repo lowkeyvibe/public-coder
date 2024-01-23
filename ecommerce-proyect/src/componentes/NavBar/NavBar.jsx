@@ -1,4 +1,4 @@
-import {NavLink, Link} from 'react-router-dom'
+import { NavLink, Link } from 'react-router-dom'
 import React from 'react'
 import CartWidget from '../CartWidget/CartWidget.jsx'
 import '../NavBar/NavBar.css'
@@ -8,7 +8,7 @@ const NavBar = () => {
     <header>
       {/* LOGO */}
       <Link to="/">
-      <img src="../img/logo.png" alt="" />
+        <img src="../img/logo.png" alt="" />
       </Link>
 
       {/* LOCATION */}
@@ -27,16 +27,15 @@ const NavBar = () => {
 
 
       {/* LIST */}
-
       <div className="nav-list">
-        <ul>  
+        <ul>
           <li><NavLink to="categoria/celulares">Phones 📱</NavLink></li>
           <li><NavLink to="categoria/juegos">Games 🕹️</NavLink></li>
           <li><NavLink to="categoria/muebles">Furniture 🪑</NavLink></li>
           <li><NavLink to="categoria/cuadros">Painting 🖼️</NavLink></li>
         </ul>
       </div>
- 
+
       {/* LOGIN / REGISTER */}
       <div className="account-div">
         <button className="login-button">Login</button>

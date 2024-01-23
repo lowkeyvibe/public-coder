@@ -34,14 +34,14 @@
     font-family: "Poppins";
     font-size: 3rem;
     margin-top: 1rem;
-    margin-left: 1rem ;
+    margin-left: 1rem;
     color: white;
 }
 
 .checkout-unity-price {
     font-family: "Poppins";
     font-size: 2rem;
-    margin-left: 2rem ;
+    margin-left: 2rem;
     margin-bottom: 1.5rem;
 }
 
@@ -52,3 +52,35 @@
     height: 25rem;
 }
 
+.thanks-checkout {
+    font-size: 1.3rem;
+    color: greenyellow;
+    font-family: "Poppins";
+    margin-top: 1.5rem;
+}
+
+form span {
+    color: white;
+    font-family: "Poppins";
+    margin-top: 1.5rem;
+}
+
+.error-form {
+    margin-top: 0.9rem;
+    font-size: 1.3rem;
+    font-family: "Poppins";
+    font-weight: bold;
+    color: rgba(255, 0, 0, 0.729);
+    text-transform: uppercase;
+}
+
+.final-price-checkout {
+    font-family: "Poppins";
+    color: white;
+    padding: 2rem;
+    font-size: 4rem;
+}
+
+.total-ch {
+    color: green;
+}
