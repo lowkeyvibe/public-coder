@@ -1,0 +1,13 @@
+#products {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.each-product-box {
+    width: 150px;
+    text-align: center;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    padding: 2rem;
+    border: solid 3px red;
+}

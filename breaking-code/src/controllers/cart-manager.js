@@ -3,7 +3,7 @@ const fs = require("fs").promises;
 class CartManager {
     constructor(path) {
         this.carts = [];
-        this.path = path;
+        this.path = "../breaking-code/src/models/carts.json";
         this.prevId = 0;
 
         this.loadCarts();

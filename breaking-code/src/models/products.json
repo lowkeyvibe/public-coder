@@ -1,1 +1,68 @@
-[]
+[
+  {
+    "title": "Keyboard",
+    "description": "Epic Keyboard",
+    "price": 500,
+    "code": "a1",
+    "stock": 10,
+    "category": "Tech",
+    "status": true,
+    "thumbnails": [],
+    "id": 1
+  },
+  {
+    "title": "Mouse",
+    "description": "Epic Mouse",
+    "price": 200,
+    "code": "a2",
+    "stock": 10,
+    "category": "Tech",
+    "status": true,
+    "thumbnails": [],
+    "id": 2
+  },
+  {
+    "title": "Monitor",
+    "description": "Epic Monitor",
+    "price": 400,
+    "code": "a3",
+    "stock": 10,
+    "category": "Tech",
+    "status": true,
+    "thumbnails": [],
+    "id": 3
+  },
+  {
+    "title": "CPU",
+    "description": "Epic CPU",
+    "price": 50,
+    "code": "a4",
+    "stock": 10,
+    "category": "Tech",
+    "status": true,
+    "thumbnails": [],
+    "id": 4
+  },
+  {
+    "title": "MacBook Air",
+    "description": "Epic PC",
+    "price": 1000,
+    "code": "a5",
+    "stock": 10,
+    "category": "Tech",
+    "status": true,
+    "thumbnails": [],
+    "id": 5
+  },
+  {
+    "title": "RAM",
+    "description": "Epic RAM",
+    "price": 100,
+    "code": "a6",
+    "stock": 10,
+    "category": "Tech",
+    "status": true,
+    "thumbnails": [],
+    "id": 6
+  }
+]

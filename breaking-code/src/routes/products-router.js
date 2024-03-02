@@ -3,10 +3,10 @@ const express = require("express");
 const router = express.Router();
 
 // Me traigo el modulo de mi PRODUCT MANAGER para poder manipularlo.
-const ProductManager = require("/Users/lowkey/Desktop/github-repos/public-coder/breaking-code/src/controllers/product-manager.js");
+const ProductManager = require("../controllers/product-manager.js");
 
 // Asigno todos mis productos a una variable.
-const productManager = new ProductManager("/Users/lowkey/Desktop/github-repos/public-coder/breaking-code/src/models/products.json");
+const productManager = new ProductManager("../breaking-code/src/models/products.json");
 
 // "MIDDLEWARE"
 router.use(express.json());
@@ -51,10 +51,10 @@ router.post("/", async (req, res) => {
     const newProduct = req.body;
     try {
         await productManager.addProduct(newProduct);
-        res.send({ status: "SUCCESS", message: "PRODUCT ADDED!" })        
+        res.send({ status: "SUCCESS", message: "PRODUCT ADDED!" })
     }
-    catch(error) {
-        res.send({ status:"DENIED", message:"OPERATION DENIED"})
+    catch (error) {
+        res.send({ status: "DENIED", message: "OPERATION DENIED" })
     }
 })
 
@@ -68,7 +68,7 @@ router.put("/:pid", (req, res) => {
         res.send({ status: "SUCCESS", message: "PRODUCT UPDATED!" })
 
     } catch (error) {
-        res.send({ status: "DENIED" })        
+        res.send({ status: "DENIED" })
     }
 })
 
@@ -78,9 +78,9 @@ router.delete("/:pid", async (req, res) => {
 
     try {
         await productManager.deleteProduct(parseInt(id))
-        res.send({status: "SUCCESS, PRODUCT DELETED"})
+        res.send({ status: "SUCCESS, PRODUCT DELETED" })
     } catch (error) {
-        res.send({status: "DENIED"})
+        res.send({ status: "DENIED" })
     }
 
     res.send({ status: "success", message: "PRODUCT DELETED!" })

@@ -5,15 +5,15 @@ class ProductManager {
 
     constructor(path) {
         this.products = [],
-            this.path = "/Users/lowkey/Desktop/github-repos/public-coder/breaking-code/src/models/products.json";
+            this.path = "../breaking-code/src/models/products.json";
     }
 
     // Metodo 1
-    async addProduct({ title, description, price, img, code, stock, category, status, thumbnails }) {
+    async addProduct({ title, description, price, code, stock, category, status}) {
 
         try {
             const arrayProducts = await this.readingFile()
-            if (!title || !description || !price || !img || !code || !stock || !category || !status || !thumbnails) {
+            if (!title || !description || !price || !code || !stock || !category || !status) {
                 console.log("Missing fields!");
                 return
 
@@ -26,12 +26,11 @@ class ProductManager {
                     title,
                     description,
                     price,
-                    img,
                     code,
                     stock,
                     category,
                     status,
-                    thumbnails
+                    thumbnails: []
                 }
 
                 if (arrayProducts.length > 0) {

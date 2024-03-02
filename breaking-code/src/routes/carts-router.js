@@ -1,8 +1,8 @@
 // Traigo EXPRESS
 const express = require("express");
 const router = express.Router();
-const CartManager = require("/Users/lowkey/Desktop/github-repos/public-coder/breaking-code/src/controllers/cart-manager");
-const cartManager = new CartManager("/Users/lowkey/Desktop/github-repos/public-coder/breaking-code/src/models/carts.json");
+const CartManager = require("../controllers/cart-manager");
+const cartManager = new CartManager("../breaking-code/src/models/carts.json");
 
 // ACÁ CREAMOS UN NUEVO CARRITO!
 router.post("/", async (req, res) => {
